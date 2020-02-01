@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive Gallery</title>
+    <style>
+        body {
+            font-family: sans-serif;
+
+        }
+
+        .wrapper {
+            max-width: 1600px;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            margin-top: 30px;
+
+        }
+
+        .tile {
+            max-width: 280px;
+            width: 280px;
+            border-radius: 8px;
+            overflow: hidden;
+            border-collapse: collapse;
+            margin-top: 30px;
+        }
+
+        #placeholder {
+            max-height: 280px;
+            height: 280px;
+            background-image: url(placeholder-image.png);
+            background-color: cornflowerblue;
+            background-position: center;
+        }
+
+        #text {
+            text-align: center;
+            background-color: rgb(228, 228, 228);
+            border-collapse: collapse;
+            padding: 4px;
+        }
+
+        h1 {
+            flex: 85%;
+            font-size: 2.5em;
+            margin-left: 35px;
+        }
+
+        #text-box {
+            margin-top: 35px;
+            margin-right: 35px;
+            flex: 90%;
+            font-size: 1.5em;
+            margin-left: 40px;
+            overflow-wrap: break-word;
+        }
+
+        @media screen and (max-width: 1024px) {
+            .tile {
+                width: 33.3%;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .tile {
+                width: 50%;
+            }
+        }
+
+        @media screen and (max-width: 414px) {
+            .tile {
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 1020px) {
+            h1 {
+                font-size: 1.2em;
+                text-align: start;
+                margin-left: 60px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+
+                text-align: start;
+            }
+        }
+
+        @media screen and (max-width: 414px) {
+            h1 {
+                font-size: 1.7em;
+                margin-left: 0px;
+                text-align: center;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Gallery Heading</h1>
+    <div class="wrapper">
+
+        <div class="tile">
+            <div id="placeholder"></div>
+            <div id="text">Image File</div>
+        </div>
+        <div class="tile">
+            <div id="placeholder"></div>
+            <div id="text">Image File</div>
+        </div>
+        <div class="tile">
+            <div id="placeholder"></div>
+            <div id="text">Image File</div>
+        </div>
+        <div class="tile">
+            <div id="placeholder"></div>
+            <div id="text">Image File</div>
+        </div>
+        <div class="tile">
+            <div id="placeholder"></div>
+            <div id="text">Image File</div>
+        </div>
+        <div class="tile">
+            <div id="placeholder"></div>
+            <div id="text">Image File</div>
+        </div>
+        <div class="tile">
+            <div id="placeholder"></div>
+            <div id="text">Image File</div>
+        </div>
+        <div class="tile">
+            <div id="placeholder"></div>
+            <div id="text">Image File</div>
+        </div>
+        <div class="tile">
+            <div id="placeholder"></div>
+            <div id="text">Image File</div>
+        </div>
+        <div class="tile">
+            <div id="placeholder"></div>
+            <div id="text">Image File</div>
+        </div>
+        <div id="text-box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat officiis ratione veritatis! Voluptate hic
+            quia est? Facere commodi, sed repellendus odio natus id, fugit sapiente magni optio, voluptatibus qui
+            voluptate!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, reprehenderit nesciunt veritatis cum soluta
+            repudiandae saepe. Eos voluptas animi libero autem sed impedit sunt distinctio. Aliquam animi libero debitis
+            facilis!
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam, totam? Consectetur reiciendis deleniti,
+            dolorum aperiam voluptate doloremque perferendis pariatur iusto quia nesciunt eligendi impedit, voluptatem
+            perspiciatis officiis natus incidunt nostrum.
+        </div>
+    </div>
+
+</body>
+
+</html>

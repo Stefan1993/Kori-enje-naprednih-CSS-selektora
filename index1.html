@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 20px 20% 0 20%;
+        }
+        #navbar {
+            width: 959px;
+            
+        }
+        button {
+            border-radius:8px;
+            padding: 10px;
+        }
+        #animated {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: linear-gradient( #fb5dad, #55fb9f, #b97aff);
+        }
+        #animated::after {
+            margin-top: px;
+            margin-left: 10px;
+            position: absolute;
+            content: "";
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: #050210 ;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="animated"></div>
+        <button><a href="#">Home</a></button>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+        
+    </nav>
+</body>
+</html>
